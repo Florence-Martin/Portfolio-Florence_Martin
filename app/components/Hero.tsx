@@ -64,12 +64,21 @@ export const Hero = () => {
           <br />
           <br />
           <strong>Mes Objectifs</strong> =&gt; Je souhaite continuer à évoluer
-          dans ces trois domaines complémentaires : le
-          <strong>développement front-end</strong>, l&apos;
-          <strong>UX/UI Design</strong> et la
-          <strong>gestion de produits</strong>. Que ce soit au sein d’une équipe
-          créative ou dans le cadre de projets novateurs, je cherche à apporter
-          une contribution alliant expertise technique et sens du design.
+          dans ces trois domaines complémentaires :
+          <ul>
+            <li className="ml-3">
+              <strong>- développement front-end</strong>
+            </li>
+            <li className="ml-3">
+              <strong>- UX/UI Design</strong>
+            </li>
+            <li className="ml-3">
+              <strong>- gestion de produits</strong>
+            </li>
+          </ul>
+          Que ce soit au sein d’une équipe créative ou dans le cadre de projets
+          novateurs, je cherche à apporter une contribution alliant expertise
+          technique et sens du design.
         </p>
       </div>
       <div className="flex-1 max-md:m-auto ml-auto">
