@@ -8,7 +8,7 @@ import { LinkedInIcon } from "./icons/LinkedInIcon";
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 py-4">
+    <header className="sticky top-0 py-4 bg-background shadow-md z-50">
       <Section className="flex items-baseline">
         <Link
           href="https://cvflorence-martin.vercel.app"

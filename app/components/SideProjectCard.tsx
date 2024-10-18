@@ -23,7 +23,7 @@ export const SideProjectCard = ({
       className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
     >
       <span className="text-accent-foreground bg-accent p-3 rounded-sm">
-        <Logo size={16} />
+        <Logo size={24} />
       </span>
       <div>
         <p className="text-lg font-semibold">{title}</p>
