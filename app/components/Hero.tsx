@@ -21,7 +21,7 @@ const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {
 export const Hero = () => {
   return (
     <Section className="flex max-md:flex-col items-start gap-4">
-      <div className="flex-[2] flex flex-col gap-2">
+      <div className="flex-[3] w-full flex flex-col gap-2">
         <h2 className="text-font-caption text-5xl font-bold text-primary">
           Florence Martin
         </h2>
@@ -49,7 +49,7 @@ export const Hero = () => {
           d’interfaces utilisateur ergonomiques et performantes. Avec une
           expertise en UX/UI design et une expérience en gestion de produits, je
           combine créativité et rigueur technique pour concevoir des solutions
-          numériques innovantes et centrées sur l’utilisateur.
+          numériques innovantes et centrées sur l’utilisateur. <br />
           <br />
           Au fil de mon parcours, j’ai eu l’opportunité de travailler sur des
           projets variés, allant du développement d’interfaces réactives à la
@@ -63,25 +63,27 @@ export const Hero = () => {
           interfaces intuitives et accessibles.
           <br />
           <br />
-          <strong>Mes Objectifs</strong> =&gt; Je souhaite continuer à évoluer
-          dans ces trois domaines complémentaires :
-          <ul>
-            <li className="ml-3">
-              <strong>- développement front-end</strong>
-            </li>
-            <li className="ml-3">
-              <strong>- UX/UI Design</strong>
-            </li>
-            <li className="ml-3">
-              <strong>- gestion de produits</strong>
-            </li>
-          </ul>
+          <strong>Mes Objectifs</strong> =&gt; Continuer à évoluer dans ces
+          trois domaines complémentaires :
+        </p>
+        <ul>
+          <li className="ml-3">
+            <strong>- développement front-end</strong>
+          </li>
+          <li className="ml-3">
+            <strong>- UX/UI Design</strong>
+          </li>
+          <li className="ml-3">
+            <strong>- gestion de produits</strong>
+          </li>
+        </ul>
+        <p className="text-base">
           Que ce soit au sein d’une équipe créative ou dans le cadre de projets
           novateurs, je cherche à apporter une contribution alliant expertise
           technique et sens du design.
         </p>
       </div>
-      <div className="flex-1 max-md:m-auto ml-auto">
+      <div className="flex-[2] max-md:m-auto ml-auto">
         <Image
           src="/assets/images/FloM.png"
           alt="Photo de Florence Martin"
