@@ -12,6 +12,7 @@ const Header: React.FC = () => {
       <Section className="flex items-baseline">
         <Link
           href="https://cvflorence-martin.vercel.app"
+          target="_blank"
           className="text-lg font-bold text-primary"
         >
           Florence_Martin-CV
