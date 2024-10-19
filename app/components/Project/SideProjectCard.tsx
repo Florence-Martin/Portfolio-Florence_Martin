@@ -21,6 +21,8 @@ export const SideProjectCard = ({
     <Link
       href={url}
       className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <span className="text-accent-foreground bg-accent p-3 rounded-sm">
         <Logo size={24} />

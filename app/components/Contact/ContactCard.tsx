@@ -9,6 +9,7 @@ interface ContactProps {
   mediumImage: string;
   name: string;
   description: string;
+  url?: string;
 }
 
 export const ContactCard = ({
@@ -16,6 +17,7 @@ export const ContactCard = ({
   mediumImage,
   name,
   description,
+  url,
 }: ContactProps) => {
   return (
     <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex items-center gap-4">
@@ -39,15 +41,14 @@ export const ContactCard = ({
         <p className="text-lg font-semibold">{name}</p>
         <p className="text-md text-muted-foreground">{description}</p>
       </div>
-      <Link
-        href="https://www.linkedin.com/in/florence-martin-922b3861/"
-        target="_blank"
-      >
-        <SquareArrowOutUpRight
-          size={16}
-          className="w-6 h-6 text-accent group-hover:translate-x-2 mr-4 group-hover:-translate-y-2 transition-transform"
-        />
-      </Link>
+      {url && (
+        <Link href={url} target="_blank">
+          <SquareArrowOutUpRight
+            size={16}
+            className="w-6 h-6 text-accent group-hover:translate-x-2 mr-4 group-hover:-translate-y-2 transition-transform"
+          />
+        </Link>
+      )}
     </Card>
   );
 };

@@ -2,7 +2,6 @@ import React from "react";
 import { Card } from "@/components/ui/card";
 import { WorkCard } from "./WorkCard";
 
-// Liste des expériences de travail
 const WORK_EXPERIENCES = [
   {
     image:
@@ -24,7 +23,6 @@ const WORK_EXPERIENCES = [
   },
 ];
 
-// Composant pour lister les expériences de travail
 export const WorkList = () => {
   return (
     <Card className="w-full p-4 flex flex-col gap-2">

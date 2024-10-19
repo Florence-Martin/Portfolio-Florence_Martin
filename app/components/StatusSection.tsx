@@ -1,8 +1,8 @@
 import React from "react";
 import { Section } from "./Section";
-import { ProjectList } from "./ProjectList";
-import { WorkList } from "./WorkList";
-import { ContactList } from "./ContactList";
+import { ProjectList } from "./Project/ProjectList";
+import { WorkList } from "./Work/WorkList";
+import { ContactList } from "./Contact/ContactList";
 
 // Composant principal qui regroupe les sections : Projets, Work, Contact
 export const StatusSection = () => {

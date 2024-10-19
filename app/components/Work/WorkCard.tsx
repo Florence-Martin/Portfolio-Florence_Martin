@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 
-// Interface pour typer les props des expériences de travail
 interface WorkProps {
   image: string;
   title: string;
@@ -13,7 +12,6 @@ interface WorkProps {
   student?: boolean;
 }
 
-// Composant pour afficher une expérience de travail
 export const WorkCard = ({
   image,
   title,

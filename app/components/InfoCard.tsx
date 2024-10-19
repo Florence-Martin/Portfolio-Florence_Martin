@@ -1,12 +1,10 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 
-// Interface pour les props du composant InfoCard
 interface InfoCardProps {
   title: string;
 }
 
-// Composant générique pour afficher une carte d'information (Work, Contact, etc.)
 export const InfoCard = ({ title }: InfoCardProps) => {
   return (
     <Card className="p-4 flex-1">

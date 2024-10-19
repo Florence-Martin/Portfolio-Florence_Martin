@@ -4,19 +4,13 @@ import { ContactCard } from "./ContactCard";
 
 const CONTACT = [
   {
+    url: "https://www.linkedin.com/in/florence-martin-922b3861/",
     name: "@Florence-Martin",
     image:
       "https://media.licdn.com/dms/image/v2/D4E03AQHqkKeH8nhpzg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1665412575506?e=1734566400&v=beta&t=DEQjdGf4N6JtYrvSgPOYq4uG49xWlF35Fvm0jGT8lX4",
     mediumImage: "/assets/images/LinkedIn.png",
     description: "Contactez-moi sur LinkedIn",
   },
-  //   {
-  //     name: "@Florence Martin",
-  //     image:
-  //       "https://media.licdn.com/dms/image/v2/D4E03AQHqkKeH8nhpzg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1665412575506?e=1734566400&v=beta&t=DEQjdGf4N6JtYrvSgPOYq4uG49xWlF35Fvm0jGT8lX4",
-  //     mediumImage: "/assets/images/Vercel.png",
-  //     description: "",
-  //   },
 ];
 
 export const ContactList = () => {
