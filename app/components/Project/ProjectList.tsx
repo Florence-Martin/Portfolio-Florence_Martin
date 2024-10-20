@@ -29,7 +29,7 @@ const SIDE_PROJECTS = [
     Logo: Smartphone,
     title: "Alert-Lyon",
     description:
-      "Alerte en temps réel des accidents ou problèmes de voirie à Lyon.",
+      "Alerte en temps réel des accidents ou problèmes de voirie à Lyon, d'un mobile avec photo.",
     url: "https://github.com/Florence-Martin/AlertLyon",
   },
   {
