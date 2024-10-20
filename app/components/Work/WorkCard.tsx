@@ -22,10 +22,10 @@ export const WorkCard = ({
   student,
 }: WorkProps) => {
   return (
-    <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex items-center gap-4">
+    <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group grid grid-cols-3 items-center gap-4">
       <Link
         href={url}
-        className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
+        className="col-span-2 flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
       >
         <Image
           src={image}
@@ -34,16 +34,15 @@ export const WorkCard = ({
           height={40}
           className="object-contain rounded-md"
         />
-
         <div>
           <p className="text-lg font-semibold">{title}</p>
           {student && <Badge variant="outline">Student</Badge>}
           <p className="text-md text-muted-foreground">{role}</p>
         </div>
-        <div className="ml-auto">
-          <p className="text-xs text-end text-muted-foreground">{date}</p>
-        </div>
       </Link>
+      <div className="text-right">
+        <p className="text-xs text-muted-foreground">{date}</p>
+      </div>
     </Card>
   );
 };
