@@ -26,6 +26,13 @@ const SIDE_PROJECTS = [
     url: "https://github.com/Florence-Martin/simplo-cine",
   },
   {
+    Logo: Code,
+    title: "Alert-Lyon",
+    description:
+      "Alerte en temps réel des accidents ou problèmes de voirie à Lyon.",
+    url: "https://github.com/Florence-Martin/AlertLyon",
+  },
+  {
     Logo: DiamondPlus,
     title: "Tools For Web Development",
     description: `🚧 Ce site est en cours de développement.`,
