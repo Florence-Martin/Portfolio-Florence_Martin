@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 
-import { FileUser, DiamondPlus, Code } from "lucide-react";
+import { FileUser, DiamondPlus, Code, Smartphone } from "lucide-react";
 import { SideProjectCard } from "./SideProjectCard";
 
 // Liste des projets secondaires
@@ -26,7 +26,7 @@ const SIDE_PROJECTS = [
     url: "https://github.com/Florence-Martin/simplo-cine",
   },
   {
-    Logo: Code,
+    Logo: Smartphone,
     title: "Alert-Lyon",
     description:
       "Alerte en temps réel des accidents ou problèmes de voirie à Lyon.",
