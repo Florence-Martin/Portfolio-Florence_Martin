@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 
-import { FileUser, DiamondPlus } from "lucide-react";
+import { FileUser, DiamondPlus, Code } from "lucide-react";
 import { SideProjectCard } from "./SideProjectCard";
 
 // Liste des projets secondaires
@@ -11,6 +11,19 @@ const SIDE_PROJECTS = [
     title: "CV_Florence_Martin",
     description: "Développeuse | UX/UI | CDA [Certification DevOps]",
     url: "https://cvflorence-martin.vercel.app/",
+  },
+  {
+    Logo: Code,
+    title: "CDA_fil_rouge",
+    description:
+      "Projet réalisé pour l’obtention du titre de Concepteur et Développeur d’Applications.",
+    url: "https://github.com/Florence-Martin/CDA_fil_rouge",
+  },
+  {
+    Logo: Code,
+    title: "Simplo-Cine",
+    description: "Projet réalisé pour l’obtention de la certification DevOps.",
+    url: "https://github.com/Florence-Martin/simplo-cine",
   },
   {
     Logo: DiamondPlus,

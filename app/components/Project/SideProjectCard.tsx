@@ -1,6 +1,7 @@
 import React from "react";
 import { LucideIcon } from "lucide-react";
 import Link from "next/link";
+import { Card } from "@/components/ui/card";
 
 // Interface pour typer les props d'un projet secondaire
 interface SideProjectProps {
@@ -18,19 +19,21 @@ export const SideProjectCard = ({
   url,
 }: SideProjectProps) => {
   return (
-    <Link
-      href={url}
-      className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <span className="text-accent-foreground bg-accent p-3 rounded-sm">
-        <Logo size={24} />
-      </span>
-      <div>
-        <p className="text-lg font-semibold">{title}</p>
-        <p className="text-lg text-muted-foreground">{description}</p>
-      </div>
-    </Link>
+    <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex items-center gap-4">
+      <Link
+        href={url}
+        className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span className="text-accent-foreground bg-accent p-3 rounded-sm">
+          <Logo size={24} />
+        </span>
+        <div>
+          <p className="text-lg font-semibold">{title}</p>
+          <p className="text-lg text-muted-foreground">{description}</p>
+        </div>
+      </Link>
+    </Card>
   );
 };
