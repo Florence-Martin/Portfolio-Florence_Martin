@@ -11,6 +11,7 @@ const WORK_EXPERIENCES = [
     date: "2023 - 2024",
     url: "https://ingeli.fr/",
     student: true,
+    stack: ["C#", "MongoDB", "SCSS"],
   },
   {
     image:
@@ -20,6 +21,7 @@ const WORK_EXPERIENCES = [
     date: "2021 - 2022",
     url: "https://numericite.eu/",
     student: true,
+    stack: ["React", "MongoDB", "CSS"],
   },
 ];
 

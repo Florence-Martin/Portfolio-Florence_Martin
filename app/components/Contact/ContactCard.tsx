@@ -20,14 +20,14 @@ export const ContactCard = ({
   url,
 }: ContactProps) => {
   return (
-    <Card className="p-3 bg-accent/10 group hover:bg-slate-700 transition-colors flex items-center gap-4">
+    <Card className="p-3 bg-accent/10 group transition-colors flex items-center gap-4">
       <div className="relative">
         <Image
           src={image}
           alt={name}
           width={40}
           height={40}
-          className="rounded-full object-contain group-hover:bg-slate-700"
+          className="rounded-full object-contain"
         />
         <Image
           src={mediumImage}

@@ -10,6 +10,7 @@ interface WorkProps {
   role: string;
   date: string;
   url: string;
+  stack?: string[];
   student?: boolean;
 }
 
@@ -20,6 +21,7 @@ export const WorkCard = ({
   date,
   url,
   student,
+  stack,
 }: WorkProps) => {
   return (
     <Card className="p-3 bg-accent/10 group hover:bg-slate-700 transition-colors grid grid-cols-3 items-center gap-4">
@@ -38,6 +40,15 @@ export const WorkCard = ({
           <p className="text-lg font-semibold">{title}</p>
           {student && <Badge variant="outline">Student</Badge>}
           <p className="text-md text-muted-foreground">{role}</p>
+          {/* Affichage de la stack sous forme de badges */}
+          <div className="flex flex-wrap gap-2 mt-2">
+            {stack?.map((tech, index) => (
+              <Badge key={index} variant="outline">
+                <span className="text-white mr-1">#</span>
+                {tech}
+              </Badge>
+            ))}
+          </div>
         </div>
       </Link>
       <div className="text-right">
