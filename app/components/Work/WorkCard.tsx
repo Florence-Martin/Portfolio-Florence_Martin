@@ -22,10 +22,10 @@ export const WorkCard = ({
   student,
 }: WorkProps) => {
   return (
-    <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group grid grid-cols-3 items-center gap-4">
+    <Card className="p-3 bg-accent/10 group hover:bg-slate-700 transition-colors grid grid-cols-3 items-center gap-4">
       <Link
         href={url}
-        className="col-span-2 flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
+        className="col-span-2 flex items-center gap-4 p-1 rounded group-hover:bg-slate-700 transition-colors"
       >
         <Image
           src={image}
