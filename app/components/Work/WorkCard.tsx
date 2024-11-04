@@ -28,6 +28,8 @@ export const WorkCard = ({
       <Link
         href={url}
         className="col-span-2 flex items-center gap-4 p-1 rounded group-hover:bg-slate-700 transition-colors"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <Image
           src={image}
