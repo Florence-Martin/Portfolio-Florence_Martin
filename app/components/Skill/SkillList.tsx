@@ -1,6 +1,7 @@
 import { SkillCard } from "./SkillCard";
 import { Code } from "../Code";
 import { ReactLogo } from "../icons/ReactLogo";
+import { FigmaLogo } from "../icons/FigmaLogo";
 import { NextLogo } from "../icons/NextLogo";
 import { TailwindLogo } from "../icons/TailwindLogo";
 import { Section } from "../Section";
@@ -52,6 +53,16 @@ const SKILLS = [
       </>
     ),
     imageLogo: <TailwindLogo size={42} />,
+  },
+  {
+    title: "Figma",
+    description: (
+      <>
+        La phase de maquettage et prototypage est réalisée avec
+        <Code>Figma</Code>.
+      </>
+    ),
+    imageLogo: <FigmaLogo size={42} />,
   },
 ];
 
