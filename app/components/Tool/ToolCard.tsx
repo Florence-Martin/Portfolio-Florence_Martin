@@ -8,7 +8,7 @@ interface ToolProps {
 }
 export const ToolCard = ({ title, description, imageLogo }: ToolProps) => {
   return (
-    <Card className="group hover:bg-slate-700 flex flex-col items-start gap-4 p-2">
+    <Card className="group hover:bg-slate-700 flex flex-col items-start gap-4 p-2 transition-transform transform hover:scale-105">
       <div className="group-hover:bg-slate-700">{imageLogo}</div>
       <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
       <div className="flex max-md:flex-col gap-4">
