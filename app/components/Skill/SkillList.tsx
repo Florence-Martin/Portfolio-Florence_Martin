@@ -6,7 +6,6 @@ import { NextLogo } from "../icons/NextLogo";
 import { TailwindLogo } from "../icons/TailwindLogo";
 import { Section } from "../Section";
 import { ShadcnLogo } from "../icons/ShadcnLogo";
-import { Badge } from "@/components/ui/badge";
 
 const SKILLS = [
   {
