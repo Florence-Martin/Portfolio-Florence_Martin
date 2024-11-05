@@ -69,10 +69,9 @@ const SKILLS = [
 export const SkillList = () => {
   return (
     <Section className="w-full p-4 flex flex-col gap-2">
-      <div className="flex flex-col text-2xl font-bold text-muted-foreground">
-        <Badge variant="outline">Skills</Badge>
-        J&apos;aime travailler avec...
-      </div>
+      <p className="text-lg text-muted-foreground">
+        Skills J&apos;aime travailler avec...
+      </p>
       <div className="flex flex-col md:flex-row gap-4 flex-1">
         {SKILLS.map((skill) => (
           <SkillCard key={skill.title} {...skill} />
