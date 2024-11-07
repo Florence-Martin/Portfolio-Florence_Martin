@@ -10,7 +10,8 @@ const SIDE_PROJECTS = [
     Logo: FileUser,
     title: "CV_Florence_Martin",
     description: "Développeuse | UX/UI | CDA [Certification DevOps]",
-    url: "https://cvflorence-martin.vercel.app/",
+    urlWebsite: "https://cvflorence-martin.vercel.app/",
+    urlGitHub: "https://github.com/Florence-Martin/CV-Florence_Martin",
     technologies: {
       fullstack: ["Next.js"],
       frontend: ["TypeScript", "Tailwind CSS"],
@@ -25,7 +26,8 @@ const SIDE_PROJECTS = [
     Logo: FileUser,
     title: "Portfolio_Florence_Martin",
     description: "Développeuse | UX/UI | CDA [Certification DevOps]",
-    url: "https://portfolio-florence-martin.vercel.app/",
+    urlWebsite: "https://portfolio-florence-martin.vercel.app/",
+    urlGitHub: "https://github.com/Florence-Martin/Portfolio-Florence_Martin",
     technologies: {
       fullstack: ["Next.js"],
       frontend: ["TypeScript", "Tailwind CSS", "Shadcn/UI"],
@@ -41,7 +43,8 @@ const SIDE_PROJECTS = [
     title: "CDA_fil_rouge",
     description:
       "Projet réalisé pour l’obtention du titre de Concepteur et Développeur d’Applications.",
-    url: "https://github.com/Florence-Martin/CDA_fil_rouge",
+    urlWebsite: "",
+    urlGitHub: "https://github.com/Florence-Martin/CDA_fil_rouge",
     technologies: {
       fullstack: ["Next.js"],
       frontend: ["TypeScript", "Tailwind CSS"],
@@ -56,7 +59,8 @@ const SIDE_PROJECTS = [
     Logo: Code,
     title: "Simplo-Cine",
     description: "Projet réalisé pour l’obtention de la certification DevOps.",
-    url: "https://github.com/Florence-Martin/simplo-cine",
+    urlWebsite: "",
+    urlGitHub: "https://github.com/Florence-Martin/simplo-cine",
     technologies: {
       fullstack: ["Next.js"],
       frontend: ["TypeScript", "Tailwind CSS"],
@@ -76,7 +80,8 @@ const SIDE_PROJECTS = [
     title: "Alert-Lyon",
     description:
       "Alerte en temps réel des accidents ou problèmes de voirie à Lyon, d'un mobile avec photo.",
-    url: "https://github.com/Florence-Martin/AlertLyon",
+    urlWebsite: "",
+    urlGitHub: "https://github.com/Florence-Martin/AlertLyon",
     technologies: {
       fullstack: [],
       frontend: ["React Native"],
@@ -91,7 +96,8 @@ const SIDE_PROJECTS = [
     Logo: DiamondPlus,
     title: "Tools For Web Development",
     description: `🚧 Ce site est en cours de développement.`,
-    url: "https://github.com/Florence-Martin/tools-web-development",
+    urlWebsite: "",
+    urlGitHub: "https://github.com/Florence-Martin/tools-web-development",
     technologies: {
       fullstack: ["Next.js"],
       frontend: ["Tailwind CSS"],
