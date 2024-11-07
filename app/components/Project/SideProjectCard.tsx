@@ -41,9 +41,11 @@ export const SideProjectCard = ({
         <p className="text-lg font-semibold">{title}</p>
         <p className="text-lg text-muted-foreground">{description}</p>
         <div className="flex gap-2 mt-2 md:mt-0">
-          <Link href={urlWebsite} target="_blank" rel="noopener noreferrer">
-            <Button variant="outline">Screens</Button>
-          </Link>
+          {urlWebsite && (
+            <Link href={urlWebsite} target="_blank" rel="noopener noreferrer">
+              <Button variant="outline">Online</Button>
+            </Link>
+          )}
           <Link href={urlGitHub} target="_blank" rel="noopener noreferrer">
             <Button variant="outline">GitHub</Button>
           </Link>
