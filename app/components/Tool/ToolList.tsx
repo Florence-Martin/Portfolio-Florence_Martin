@@ -1,30 +1,19 @@
-import { Code } from "../Code";
-import { FigmaLogo } from "../icons/FigmaLogo";
-import { Section } from "../Section";
-import { ToolCard } from "./ToolCard";
+import { Card } from "@/components/ui/card";
+import { ReactElement } from "react";
 
-const Tools = [
-  {
-    title: "Figma",
-    description: (
-      <>
-        La phase de maquettage et prototypage est réalisée avec
-        <Code>Figma</Code>.
-      </>
-    ),
-    imageLogo: <FigmaLogo size={42} />,
-  },
-];
-
-export const ToolList = () => {
+interface ToolProps {
+  title: string;
+  imageLogo: ReactElement;
+  description: string | ReactElement;
+}
+export const ToolCard = ({ title, description, imageLogo }: ToolProps) => {
   return (
-    <Section className="w-full p-4 flex flex-col gap-2">
-      <p className="text-lg text-muted-foreground">Maquettage</p>
-      <div className="flex flex-col md:flex-row gap-4 flex-1">
-        {Tools.map((tool) => (
-          <ToolCard key={tool.title} {...tool} />
-        ))}
+    <Card className="group hover:bg-slate-700 flex flex-col items-start gap-4 p-2 transition-transform transform hover:scale-105">
+      <div className="group-hover:bg-slate-700">{imageLogo}</div>
+      <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
+      <div className="flex max-md:flex-col gap-4">
+        <p className="text-sm text-muted-foreground">{description}</p>
       </div>
-    </Section>
+    </Card>
   );
 };
