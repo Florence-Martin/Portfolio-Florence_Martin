@@ -74,9 +74,10 @@ export const Hero = () => {
         <Image
           src="/assets/images/FloM.png"
           alt="Photo de Florence Martin"
-          className="rounded-full max-w-xs max-md:w-56 "
+          className="rounded-full max-w-xs max-md:w-56"
           width={300}
           height={300}
+          priority
         />
       </div>
     </Section>
