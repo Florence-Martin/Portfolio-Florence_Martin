@@ -20,11 +20,11 @@ export default function Home() {
       <Hero />
       <Spacing size="md" />
       <StatusSection />
-      <Spacing size="md" />
+      <Spacing size="sm" />
       <SkillList />
-      <Spacing size="md" />
-      <div className="border-t-8 border-[#4a90e2] px-8 pb-8 bg-[#2d2f34] rounded-lg shadow-lg my-12 max-h-96 overflow-y-scroll">
-        <p className="text-white font-bold py-4 mb-4 border-b-2 border-[#4a90e2] pb-2 sticky top-0 bg-[#2d2f34] z-10 w-full">
+      <Spacing size="sm" />
+      <div className="border-t-8 border-[#4a90e2] px-8  bg-[#2d2f34] rounded-lg shadow-lg max-h-96 overflow-y-scroll">
+        <p className="text-white font-bold py-4 border-b-2 border-[#4a90e2] pb-2 sticky top-0 bg-[#2d2f34] z-10 w-full">
           Voici une liste des outils que j&apos;utilise :
         </p>
         <FrameworksToolsCarousel />
@@ -33,9 +33,9 @@ export default function Home() {
         <DesignToolsCarousel />
         <ProjectToolsCarousel />
         <AdditionalToolsCarousel />
-      </div>
+        {/* </div>
       <Spacing size="md" />
-      <div>
+      <div> */}
         <BackToTopButton />
       </div>
       <Footer />
