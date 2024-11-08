@@ -21,8 +21,8 @@ export const WebstormLogo = (
           y2="95.243559%"
           id="webstormLinearGradient-1"
         >
-          <stop stop-color="#07C3F2" offset="28%"></stop>
-          <stop stop-color="#087CFA" offset="94%"></stop>
+          <stop stopColor="#07C3F2" offset="28%"></stop>
+          <stop stopColor="#087CFA" offset="94%"></stop>
         </linearGradient>
         <linearGradient
           x1="33.0630529%"
@@ -31,8 +31,8 @@ export const WebstormLogo = (
           y2="84.6848882%"
           id="webstormLinearGradient-2"
         >
-          <stop stop-color="#FCF84A" offset="14%"></stop>
-          <stop stop-color="#07C3F2" offset="37%"></stop>
+          <stop stopColor="#FCF84A" offset="14%"></stop>
+          <stop stopColor="#07C3F2" offset="37%"></stop>
         </linearGradient>
         <linearGradient
           x1="44.4163397%"
@@ -41,8 +41,8 @@ export const WebstormLogo = (
           y2="90.2032656%"
           id="webstormLinearGradient-3"
         >
-          <stop stop-color="#07C3F2" offset="28%"></stop>
-          <stop stop-color="#087CFA" offset="94%"></stop>
+          <stop stopColor="#07C3F2" offset="28%"></stop>
+          <stop stopColor="#087CFA" offset="94%"></stop>
         </linearGradient>
       </defs>
       <g>

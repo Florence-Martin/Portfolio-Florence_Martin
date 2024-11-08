@@ -5,6 +5,7 @@ import { GitHubIcon } from "./icons/GitHubIcon";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { LinkedInIcon } from "./icons/LinkedInIcon";
+import { ModeToggle } from "./ModeToggle";
 
 const Header: React.FC = () => {
   return (
@@ -35,6 +36,7 @@ const Header: React.FC = () => {
           >
             <LinkedInIcon size={12} className="text-foreground" />
           </Link>
+          <ModeToggle />
         </ul>
       </Section>
     </header>
