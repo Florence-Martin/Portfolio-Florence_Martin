@@ -5,10 +5,12 @@ import { Hero } from "./components/Hero";
 import { SkillList } from "./components/Skill/SkillList";
 import { Spacing } from "./components/Spacing";
 import { StatusSection } from "./components/StatusSection";
+import { AdditionalToolsCarousel } from "./components/Tool/AdditionalToolsCarousel";
 import { BddToolsCarousel } from "./components/Tool/BddToolsCarousel";
 import { DesignToolsCarousel } from "./components/Tool/DesignToolsCarousel";
 import { DevopsToolsCarousel } from "./components/Tool/DevopsToolsCarousel";
 import { FrameworksToolsCarousel } from "./components/Tool/FrameworksToolsCarousel";
+import { ProjectToolsCarousel } from "./components/Tool/ProjectToolsCarousel";
 
 export default function Home() {
   return (
@@ -25,6 +27,8 @@ export default function Home() {
       <BddToolsCarousel />
       <DevopsToolsCarousel />
       <DesignToolsCarousel />
+      <ProjectToolsCarousel />
+      <AdditionalToolsCarousel />
       <Spacing size="md" />
       <div>
         <BackToTopButton />
