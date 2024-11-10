@@ -1,23 +1,11 @@
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Section } from "../Section";
-import { FigmaLogo } from "../icons/FigmaLogo";
-import { IllustratorLogo } from "../icons/IllustratorLogo";
+import { FetchDesignTools } from "@/lib/fetchDesignTools";
 
-const ToolsDesign = [
-  {
-    title: "Figma",
-    description: <>Maquettage et Prototypage</>,
-    imageLogo: <FigmaLogo size={60} />,
-  },
-  {
-    title: "Illustrator",
-    description: <>Dessin vectoriel</>,
-    imageLogo: <IllustratorLogo size={60} />,
-  },
-];
+export const DesignToolsCarousel: React.FC = async () => {
+  const ToolsDesign = await FetchDesignTools();
 
-export const DesignToolsCarousel = () => {
   return (
     <Section className="w-full p-4 flex flex-col gap-2">
       <p className="text-lg text-muted-foreground">Design</p>

@@ -1,12 +1,21 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ArrowBigUpDash } from "lucide-react";
-import { useWindowScroll } from "react-use";
 
 const BackToTopButton: React.FC = () => {
-  const { y: scrollY } = useWindowScroll();
-  const isVisible = scrollY > 300;
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsVisible(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>

@@ -1,35 +1,10 @@
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Section } from "../Section";
-import { JiraLogo } from "../icons/JiraLogo";
-import { ConfluenceLogo } from "../icons/ConfluenceLogo";
-import { TrelloLogo } from "../icons/TrelloLogo";
-import { ScrumLogo } from "../icons/ScrumLogo";
+import { FetchProject } from "@/lib/fetchProjectTools";
 
-const ToolsProject = [
-  {
-    title: "Jira",
-    description: <>Gestion de projets et de suivi des tâches.</>,
-    imageLogo: <JiraLogo size={60} />,
-  },
-  {
-    title: "Confluence",
-    description: <>Documentation et collaboration d&apos;équipe.</>,
-    imageLogo: <ConfluenceLogo size={60} />,
-  },
-  {
-    title: "Trello",
-    description: <>Gestion de projets basé sur des tableaux.</>,
-    imageLogo: <TrelloLogo size={60} />,
-  },
-  {
-    title: "Scrum",
-    description: <>Méthodologie Agile.</>,
-    imageLogo: <ScrumLogo size={60} />,
-  },
-];
-
-export const ProjectToolsCarousel = () => {
+export const ProjectToolsCarousel: React.FC = async () => {
+  const ToolsProject = await FetchProject();
   return (
     <Section className="w-full p-4 flex flex-col gap-2">
       <p className="text-lg text-muted-foreground">Gestion de projets</p>

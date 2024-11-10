@@ -1,23 +1,11 @@
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Section } from "../Section";
-import { MySQLLogo } from "../icons/MySQLLogo";
-import { PostgreSQLLogo } from "../icons/PostgreSQLLogo";
+import { fetchBddTools } from "@/lib/fetchBddTools";
 
-const ToolsBdd = [
-  {
-    title: "MySQL",
-    description: <>Base de données relationnelle open source.</>,
-    imageLogo: <MySQLLogo size={60} />,
-  },
-  {
-    title: "PostgreSQL",
-    description: <>Base de données avancée open source.</>,
-    imageLogo: <PostgreSQLLogo size={60} />,
-  },
-];
+export const BddToolsCarousel: React.FC = async () => {
+  const ToolsBdd = await fetchBddTools();
 
-export const BddToolsCarousel = () => {
   return (
     <Section className="w-full p-4 flex flex-col gap-2">
       <p className="text-lg text-muted-foreground">Base de Données</p>

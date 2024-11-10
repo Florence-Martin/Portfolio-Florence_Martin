@@ -1,28 +1,10 @@
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Section } from "../Section";
-import { DockerLogo } from "../icons/DockerLogo";
-import { GitHubIcon } from "../icons/GitHubIcon";
+import { FetchDevopsTools } from "@/lib/fetchDevopsTools";
 
-const ToolsDevops = [
-  {
-    title: "GitHub Actions",
-    description: <>Automatisation des workflows CI/CD.</>,
-    imageLogo: <GitHubIcon size={60} />,
-  },
-  {
-    title: "Docker",
-    description: <>Conteneurisation d&apos;applications.</>,
-    imageLogo: <DockerLogo size={60} />,
-  },
-  {
-    title: "Docker Compose",
-    description: <>Gestion de conteneurs multi-services.</>,
-    imageLogo: <DockerLogo size={60} />,
-  },
-];
-
-export const DevopsToolsCarousel = () => {
+export const DevopsToolsCarousel: React.FC = async () => {
+  const ToolsDevops = await FetchDevopsTools();
   return (
     <Section className="w-full p-4 flex flex-col gap-2">
       <p className="text-lg text-muted-foreground">Outils DevOps</p>
