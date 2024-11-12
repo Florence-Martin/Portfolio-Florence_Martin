@@ -1,8 +1,8 @@
+import { Code } from "@/app/components/Code";
 import { NextLogo } from "@/app/components/icons/NextLogo";
 import { ReactLogo } from "@/app/components/icons/ReactLogo";
 import { ShadcnLogo } from "@/app/components/icons/ShadcnLogo";
 import { TailwindLogo } from "@/app/components/icons/TailwindLogo";
-import { Code } from "lucide-react";
 
 export async function FetchSkill() {
   return [
