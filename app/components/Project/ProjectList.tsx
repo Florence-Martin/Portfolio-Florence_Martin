@@ -1,19 +1,32 @@
+"use client";
+
 import React from "react";
-import { Card } from "@/components/ui/card";
 import { FetchProject } from "@/lib/fetchProject";
 import { SideProjectCard } from "./SideProjectCard";
+import { motion } from "framer-motion";
+import { Card } from "@/components/ui/card";
 
-// Composant pour lister les projets
 export const ProjectList: React.FC = async () => {
   const projects = await FetchProject();
 
   return (
     <Card className="w-full p-4 flex flex-col gap-2">
-      <p className="text-lg text-muted-foreground">Mes projets</p>
-      <div className="flex flex-col gap-4">
-        {projects.map((project) => (
-          <SideProjectCard key={project.title} {...project} />
-        ))}
+      <div className="min-h-screen bg-background p-6">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <motion.h1
+            className="text-4xl font-bold text-foreground mb-8"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Mes projets
+          </motion.h1>
+          <div className="grid gap-6">
+            {projects.map((project) => (
+              <SideProjectCard key={project.title} {...project} />
+            ))}
+          </div>
+        </div>
       </div>
     </Card>
   );
