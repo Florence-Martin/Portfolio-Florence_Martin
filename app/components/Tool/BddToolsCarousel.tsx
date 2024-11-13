@@ -8,7 +8,9 @@ export const BddToolsCarousel: React.FC = async () => {
 
   return (
     <Section className="w-full p-4 flex flex-col gap-2">
-      <p className="text-lg text-muted-foreground">Base de Données</p>
+      <p className="text-xl font-medium text-muted-foreground">
+        Base de Données
+      </p>
 
       {/* Conteneur de défilement horizontal avec accrochage */}
       <div className="w-full overflow-x-auto snap-x snap-mandatory flex gap-4 py-4">

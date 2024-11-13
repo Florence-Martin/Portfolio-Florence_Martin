@@ -14,7 +14,7 @@ export const ProjectList: React.FC = async () => {
       <div className="min-h-screen bg-background p-6">
         <div className="max-w-4xl mx-auto space-y-8">
           <motion.h1
-            className="text-4xl font-bold text-foreground mb-8"
+            className="text-3xl font-medium text-foreground mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
