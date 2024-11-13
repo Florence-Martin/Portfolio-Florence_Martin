@@ -1,3 +1,5 @@
+"use client";
+import { useScroll, useSpring, motion } from "framer-motion";
 import BackToTopButton from "./components/BackButton";
 import { Footer } from "./components/Footer";
 import Header from "./components/Header";
@@ -13,9 +15,22 @@ import { FrameworksToolsCarousel } from "./components/Tool/FrameworksToolsCarous
 import { ProjectToolsCarousel } from "./components/Tool/ProjectToolsCarousel";
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
+  const scaleY = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+  });
+
   return (
     <main>
       <Header />
+
+      {/* Barre de progression verticale */}
+      <motion.div
+        style={{ scaleY }}
+        className="fixed top-0 left-0 bottom-0 w-2 bg-[#4a90e2] z-60 origin-top"
+      />
+
       <Spacing size="md" />
       <Hero />
       <Spacing size="md" />
@@ -24,7 +39,7 @@ export default function Home() {
       <SkillList />
       <Spacing size="sm" />
 
-      <div className="border-t-8 border-[#4a90e2] px-8  bg-[#2d2f34] rounded-lg shadow-lg max-h-96 overflow-y-scroll">
+      <div className="border-t-8 border-[#4a90e2] px-8 bg-[#2d2f34] rounded-lg shadow-lg max-h-96 overflow-y-scroll">
         <p className="text-white font-bold py-4 border-b-2 border-[#4a90e2] pb-2 sticky top-0 bg-[#2d2f34] z-10 w-full">
           Voici une liste des outils que j&apos;utilise :
         </p>
@@ -34,9 +49,6 @@ export default function Home() {
         <DesignToolsCarousel />
         <ProjectToolsCarousel />
         <AdditionalToolsCarousel />
-        {/* </div>
-      <Spacing size="md" />
-      <div> */}
         <BackToTopButton />
       </div>
       <Footer />
