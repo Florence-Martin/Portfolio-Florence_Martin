@@ -8,7 +8,13 @@ export async function FetchProject() {
       description: "Développeuse | UX/UI | CDA [Certification DevOps]",
       urlWebsite: "https://cvflorence-martin.vercel.app/",
       urlGitHub: "https://github.com/Florence-Martin/CV-Florence_Martin",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "i18next",
+        "Tailwind CSS",
+        "Vercel",
+      ],
     },
     {
       Logo: FileUser,
@@ -16,7 +22,13 @@ export async function FetchProject() {
       description: "Développeuse | UX/UI | CDA [Certification DevOps]",
       urlWebsite: "https://portfolio-florence-martin.vercel.app/",
       urlGitHub: "https://github.com/Florence-Martin/Portfolio-Florence_Martin",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI"],
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn/UI",
+        "Vercel",
+      ],
     },
     {
       Logo: Code,
