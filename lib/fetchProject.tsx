@@ -1,4 +1,4 @@
-import { FileUser, Code, Smartphone } from "lucide-react";
+import { FileUser, Code, Smartphone, Bitcoin } from "lucide-react";
 
 export async function FetchProject() {
   return [
@@ -54,6 +54,22 @@ export async function FetchProject() {
       urlWebsite: "",
       urlGitHub: "https://github.com/Florence-Martin/AlertLyon",
       technologies: ["React Native", "Expo"],
+    },
+    {
+      Logo: Bitcoin,
+      title: "Crypto-Tracker",
+      description:
+        "Suivez les cours des cryptomonnaies et gérer de manière centralisée son wallet.",
+      urlWebsite: "",
+      urlGitHub: "https://github.com/Florence-Martin/Crypto-Tracker",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "MongoDB",
+        "Storybook",
+        "Tailwind CSS",
+        "Shadcn/UI",
+      ],
     },
   ];
 }
