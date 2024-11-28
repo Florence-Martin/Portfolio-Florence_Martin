@@ -1,3 +1,4 @@
+import { MongoDbLogo } from "@/app/components/icons/MongoDbLogo";
 import { MySQLLogo } from "@/app/components/icons/MySQLLogo";
 import { PostgreSQLLogo } from "@/app/components/icons/PostgreSQLLogo";
 
@@ -12,6 +13,13 @@ export async function fetchBddTools() {
       title: "PostgreSQL",
       description: <>Base de données avancée open source.</>,
       imageLogo: <PostgreSQLLogo size={60} />,
+    },
+    {
+      title: "MongoDB",
+      description: (
+        <>Base de données NoSQL orientée documents, sans schéma prédéfini.</>
+      ),
+      imageLogo: <MongoDbLogo size={60} />,
     },
   ];
 }
