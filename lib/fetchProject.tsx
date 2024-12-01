@@ -15,6 +15,7 @@ export async function FetchProject() {
         "Tailwind CSS",
         "Vercel",
       ],
+      inProgress: false,
     },
     {
       Logo: FileUser,
@@ -29,6 +30,7 @@ export async function FetchProject() {
         "Shadcn/UI",
         "Vercel",
       ],
+      inProgress: false,
     },
     {
       Logo: Code,
@@ -38,6 +40,7 @@ export async function FetchProject() {
       urlWebsite: "",
       urlGitHub: "https://github.com/Florence-Martin/CDA_fil_rouge",
       technologies: ["Next.js", "TypeScript", "PostgreSQL", "Docker"],
+      inProgress: false,
     },
     {
       Logo: Code,
@@ -46,6 +49,7 @@ export async function FetchProject() {
       urlWebsite: "",
       urlGitHub: "https://github.com/Florence-Martin/simplo-cine",
       technologies: ["Next.js", "TypeScript", "Docker", "Nginx"],
+      inProgress: false,
     },
     {
       Logo: Smartphone,
@@ -54,6 +58,7 @@ export async function FetchProject() {
       urlWebsite: "",
       urlGitHub: "https://github.com/Florence-Martin/AlertLyon",
       technologies: ["React Native", "Expo"],
+      inProgress: false,
     },
     {
       Logo: Bitcoin,
@@ -70,6 +75,7 @@ export async function FetchProject() {
         "Tailwind CSS",
         "Shadcn/UI",
       ],
+      inProgress: true,
     },
   ];
 }

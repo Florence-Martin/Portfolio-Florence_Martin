@@ -27,6 +27,7 @@ interface SideProjectProps {
   urlWebsite: string;
   urlGitHub: string;
   technologies: string[];
+  inProgress?: boolean;
 }
 
 export const SideProjectCard = ({
@@ -36,6 +37,7 @@ export const SideProjectCard = ({
   urlWebsite,
   urlGitHub,
   technologies,
+  inProgress,
 }: SideProjectProps) => {
   return (
     <motion.div
@@ -61,6 +63,14 @@ export const SideProjectCard = ({
           <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mt-2 w-full justify-between">
             {/* Conteneur gauche pour les liens */}
             <div className="flex items-center gap-4">
+              {inProgress && (
+                <Badge
+                  variant="destructive"
+                  className="text-destructive-foreground rounded-full"
+                >
+                  🚧 En cours...
+                </Badge>
+              )}
               {urlGitHub && (
                 <Link
                   href={urlGitHub}
