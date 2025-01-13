@@ -1,4 +1,4 @@
-import { FileUser, Code, Smartphone, Bitcoin } from "lucide-react";
+import { FileUser, Code, Smartphone, Bitcoin, Heart } from "lucide-react";
 
 export async function FetchProject() {
   return [
@@ -75,6 +75,15 @@ export async function FetchProject() {
         "Tailwind CSS",
         "Shadcn/UI",
       ],
+      inProgress: true,
+    },
+    {
+      Logo: Heart,
+      title: "Reflexo Flow",
+      description: "Site vitrine - Cabinet de réflexologie",
+      urlWebsite: "",
+      urlGitHub: "https://github.com/Florence-Martin/reflexo_flow",
+      technologies: ["React", "TaiwindCSS", "Framer Motion", "Vercel"],
       inProgress: true,
     },
   ];

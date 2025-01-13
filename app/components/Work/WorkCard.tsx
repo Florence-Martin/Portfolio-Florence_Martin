@@ -30,10 +30,11 @@ export const WorkCard = ({
         className="col-span-2 flex items-center gap-4 p-1 rounded group-hover:bg-slate-700 transition-colors"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={`Link to ${title}`}
       >
         <Image
           src={image}
-          alt={title}
+          alt={`Image of ${title}`}
           width={40}
           height={40}
           className="object-contain rounded-md"
@@ -42,7 +43,6 @@ export const WorkCard = ({
           <p className="text-lg font-semibold">{title}</p>
           {student && <Badge variant="outline">Student</Badge>}
           <p className="text-md text-muted-foreground">{role}</p>
-          {/* Affichage de la stack sous forme de badges */}
           <div className="flex flex-wrap gap-2 mt-2">
             {stack?.map((tech, index) => (
               <Badge key={index} variant="outline">

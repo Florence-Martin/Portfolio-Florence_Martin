@@ -15,6 +15,7 @@ const Header: React.FC = () => {
           href="https://cvflorence-martin.vercel.app"
           target="_blank"
           className="text-lg font-bold text-primary"
+          aria-label="CV"
         >
           Florence_Martin-CV
         </Link>
@@ -25,6 +26,7 @@ const Header: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+            aria-label="GitHub"
           >
             <GitHubIcon size={12} className="text-foreground" />
           </Link>
@@ -33,6 +35,7 @@ const Header: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+            aria-label="LinkedIn"
           >
             <LinkedInIcon size={12} className="text-foreground" />
           </Link>

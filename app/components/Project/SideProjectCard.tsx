@@ -76,6 +76,7 @@ export const SideProjectCard = ({
                   href={urlGitHub}
                   className="text-muted-foreground hover:text-primary transition-colors"
                   target="_blank"
+                  aria-label="GitHub"
                   rel="noopener noreferrer"
                 >
                   <Github className="w-6 h-6" />
@@ -87,6 +88,7 @@ export const SideProjectCard = ({
                   href={urlWebsite}
                   className="text-muted-foreground hover:text-primary transition-colors"
                   target="_blank"
+                  aria-label="Site en ligne"
                   rel="noopener noreferrer"
                 >
                   <ExternalLink className="w-6 h-6" />
@@ -121,6 +123,7 @@ export const SideProjectCard = ({
                   <Button
                     variant="ghost"
                     size="icon"
+                    aria-label="Voir plus"
                     className="text-muted-foreground hover:text-primary ml-2"
                   >
                     <ChevronRight className="w-5 h-5" />

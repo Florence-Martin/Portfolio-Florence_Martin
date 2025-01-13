@@ -21,7 +21,11 @@ const BackToTopButton: React.FC = () => {
     <>
       {isVisible && (
         <div className="back-to-top-button-wrapper fixed bottom-5 right-5">
-          <a href="#Top" className="button-circle bg-gray-300 w-inline-block">
+          <a
+            href="#Top"
+            className="button-circle bg-gray-300 w-inline-block"
+            aria-label="Back to top"
+          >
             <ArrowBigUpDash className="icon-arrow-up" />
           </a>
         </div>

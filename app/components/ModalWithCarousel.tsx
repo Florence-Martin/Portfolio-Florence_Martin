@@ -40,9 +40,13 @@ export const ModalWithCarousel = ({
             Close
           </Button>
 
-          {/* Carrousel */}
+          {/* Carousel */}
           <div className="flex items-center justify-center">
-            <button onClick={goToPrevious} className="mr-4">
+            <button
+              onClick={goToPrevious}
+              className="mr-4"
+              aria-label="Previous image"
+            >
               ⬅️
             </button>
             <Image
@@ -50,12 +54,12 @@ export const ModalWithCarousel = ({
               alt={`Project Screenshot ${currentIndex + 1}`}
               className="w-full max-h-80 object-cover"
             />
-            <button onClick={goToNext} className="ml-4">
+            <button onClick={goToNext} className="ml-4" aria-label="Next image">
               ➡️
             </button>
           </div>
 
-          {/* Indicateur de position */}
+          {/* Position indicator */}
           <div className="flex justify-center mt-4">
             {images.map((_, index: number) => (
               <div
