@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["media.licdn.com"], // Ajouter le domaine externe autorisé
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "media.licdn.com",
+        pathname: "/dms/image/**", // Ajustez le chemin si nécessaire
+      },
+    ],
   },
 };
 
