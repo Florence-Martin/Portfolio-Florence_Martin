@@ -83,8 +83,15 @@ export async function FetchProject() {
       description: "Site vitrine - Cabinet de réflexologie",
       urlWebsite: "https://www.reflexo-flow.fr/",
       urlGitHub: "https://github.com/Florence-Martin/reflexo_flow",
-      technologies: ["React", "TaiwindCSS", "Framer Motion", "Vercel"],
-      inProgress: true,
+      technologies: [
+        "React",
+        "TaiwindCSS",
+        "Framer Motion",
+        "EmailJS",
+        "Firebase",
+        "Vercel",
+      ],
+      inProgress: false,
     },
   ];
 }
