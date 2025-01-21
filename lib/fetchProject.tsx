@@ -1,4 +1,11 @@
-import { FileUser, Code, Smartphone, Bitcoin, Heart } from "lucide-react";
+import {
+  FileUser,
+  Code,
+  Smartphone,
+  Bitcoin,
+  Heart,
+  SquareLibrary,
+} from "lucide-react";
 
 export async function FetchProject() {
   return [
@@ -33,6 +40,57 @@ export async function FetchProject() {
       inProgress: false,
     },
     {
+      Logo: SquareLibrary,
+      title: "UI Library",
+      description: "Bibliothèque de composants UI",
+      urlWebsite: "https://ui-library-navy.vercel.app/",
+      urlGitHub: "https://github.com/Florence-Martin/UI-Library",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Next-themes",
+        "TaiwindCSS",
+        "Framer Motion",
+        "Lucide Icon",
+        "Vercel",
+      ],
+      inProgress: true,
+    },
+    {
+      Logo: Bitcoin,
+      title: "Crypto-Tracker",
+      description:
+        "Suivez les cours des cryptomonnaies et gérer de manière centralisée son wallet.",
+      urlWebsite: "",
+      urlGitHub: "https://github.com/Florence-Martin/Crypto-Tracker",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "MongoDB",
+        "Storybook",
+        "Tailwind CSS",
+        "Shadcn/UI",
+      ],
+      inProgress: true,
+    },
+    {
+      Logo: Heart,
+      title: "Reflexo Flow",
+      description:
+        "Site vitrine - Cabinet de réflexologie - Déployé avec nom de domaine.",
+      urlWebsite: "https://www.reflexo-flow.fr/",
+      urlGitHub: "https://github.com/Florence-Martin/reflexo_flow",
+      technologies: [
+        "React",
+        "TaiwindCSS",
+        "Framer Motion",
+        "EmailJS",
+        "Firebase",
+        "Vercel",
+      ],
+      inProgress: false,
+    },
+    {
       Logo: Code,
       title: "CDA_fil_rouge",
       description:
@@ -58,39 +116,6 @@ export async function FetchProject() {
       urlWebsite: "",
       urlGitHub: "https://github.com/Florence-Martin/AlertLyon",
       technologies: ["React Native", "Expo"],
-      inProgress: false,
-    },
-    {
-      Logo: Bitcoin,
-      title: "Crypto-Tracker",
-      description:
-        "Suivez les cours des cryptomonnaies et gérer de manière centralisée son wallet.",
-      urlWebsite: "",
-      urlGitHub: "https://github.com/Florence-Martin/Crypto-Tracker",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "MongoDB",
-        "Storybook",
-        "Tailwind CSS",
-        "Shadcn/UI",
-      ],
-      inProgress: true,
-    },
-    {
-      Logo: Heart,
-      title: "Reflexo Flow",
-      description: "Site vitrine - Cabinet de réflexologie",
-      urlWebsite: "https://www.reflexo-flow.fr/",
-      urlGitHub: "https://github.com/Florence-Martin/reflexo_flow",
-      technologies: [
-        "React",
-        "TaiwindCSS",
-        "Framer Motion",
-        "EmailJS",
-        "Firebase",
-        "Vercel",
-      ],
       inProgress: false,
     },
   ];
