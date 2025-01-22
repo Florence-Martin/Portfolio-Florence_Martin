@@ -67,6 +67,7 @@ export async function FetchProject() {
         "Next.js",
         "TypeScript",
         "MongoDB",
+        "API Rest",
         "Storybook",
         "Tailwind CSS",
         "Shadcn/UI",
