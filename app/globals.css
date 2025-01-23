@@ -22,15 +22,15 @@ body {
   dans tes classes Tailwind pour la bg et le texte.
 */
 
-/* MODE CLAIR (valeurs par défaut) */
+/* MODE CLAIR idem thème sombre - en cours de développement */
 @layer base {
   :root {
-    --background: 0 0% 100%; /* Blanc (#fff) */
-    --foreground: 220 8% 10%; /* Gris/noir (#1b1c1e approx) */
-    --muted: 220 8% 90%; /* Gris clair (#e8e8e8) */
-    --muted-foreground: 220 8% 30%;
-    --card: 0 0% 98%; /* #fafafa */
-    --card-foreground: 220 8% 10%;
+    --background: 216 13% 15%; /* #252A30 approx (One Dark) */
+    --foreground: 219 18% 71%; /* #cccccc approx */
+    --muted: 216 12% 19%; /* #2F353C approx */
+    --muted-foreground: 216 12% 69%;
+    --card: 216 13% 13%; /* #272C31 approx */
+    --card-foreground: 219 18% 76%;
     --popover: 216 13% 12%;
     --popover-foreground: 219 18% 81%;
     --border: 216 3% 20%;
