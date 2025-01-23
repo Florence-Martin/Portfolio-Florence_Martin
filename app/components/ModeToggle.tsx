@@ -1,45 +1,43 @@
 "use client";
 
-import * as React from "react";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
-
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+// import { useTheme } from "next-themes";
+import { Moon } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export function ModeToggle() {
-  const { setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Avec next-themes, on attend le "montage" pour avoir un rendu cohérent
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button
-          variant="outline"
-          size="icon"
-          className="rounded-full"
-          aria-label="Toggle theme"
+    <button
+      className="relative group p-2 border border-foreground 
+                     rounded-full cursor-not-allowed"
+      aria-disabled="true"
+    >
+      {/* Icône forcée : Moon */}
+      <Moon className="text-gray-400" />
+
+      {/* Tooltip au survol */}
+      <span
+        className="absolute top-full left-1/2 z-10 hidden 
+                       -translate-x-1/2 pt-1 group-hover:block"
+      >
+        <span
+          className="rounded-md bg-gray-700 px-2 py-1 
+                         text-sm text-white shadow-lg"
         >
-          <Sun className="absolute h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">Toggle theme</span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+          Light mode en cours de développement
+        </span>
+      </span>
+    </button>
   );
 }

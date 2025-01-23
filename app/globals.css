@@ -2,27 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 1) Font par défaut */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* 2) Utilities personnalisées */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
-/* One dark pro mix */
+/*
+  3) Définition des variables CSS en mode clair (root)
+     et sombre (html.dark).
+  
+  Astuce : utilise hsl(var(--background)) ou rgb(var(--background))
+  dans tes classes Tailwind pour la bg et le texte.
+*/
+
+/* MODE CLAIR (valeurs par défaut) */
 @layer base {
   :root {
-    --background: 216 13% 15%;
-    --foreground: 219 18% 71%;
-    --muted: 216 12% 19%;
-    --muted-foreground: 216 12% 69%;
+    --background: 0 0% 100%; /* Blanc (#fff) */
+    --foreground: 220 8% 10%; /* Gris/noir (#1b1c1e approx) */
+    --muted: 220 8% 90%; /* Gris clair (#e8e8e8) */
+    --muted-foreground: 220 8% 30%;
+    --card: 0 0% 98%; /* #fafafa */
+    --card-foreground: 220 8% 10%;
     --popover: 216 13% 12%;
     --popover-foreground: 219 18% 81%;
-    --card: 216 13% 13%;
-    --card-foreground: 219 18% 76%;
     --border: 216 3% 20%;
     --input: 216 3% 23%;
     --primary: 219 18% 81%;
@@ -36,15 +46,16 @@ body {
     --ring: 219 18% 81%;
   }
 
+  /* MODE SOMBRE (override quand html possède la classe dark) */
   html.dark {
-    --background: 216 13% 15%;
-    --foreground: 219 18% 71%;
-    --muted: 216 12% 19%;
+    --background: 216 13% 15%; /* #252A30 approx (One Dark) */
+    --foreground: 219 18% 71%; /* #cccccc approx */
+    --muted: 216 12% 19%; /* #2F353C approx */
     --muted-foreground: 216 12% 69%;
+    --card: 216 13% 13%; /* #272C31 approx */
+    --card-foreground: 219 18% 76%;
     --popover: 216 13% 12%;
     --popover-foreground: 219 18% 81%;
-    --card: 216 13% 13%;
-    --card-foreground: 219 18% 76%;
     --border: 216 3% 20%;
     --input: 216 3% 23%;
     --primary: 219 18% 81%;
@@ -59,12 +70,18 @@ body {
   }
 }
 
+/*
+  4) Appliquer ces variables via des classes Tailwind
+     (shadcn/ui ou un équivalent).
+*/
 @layer base {
+  /* Force un border par défaut sur tous les éléments (optionnel) */
   * {
     @apply border-border;
   }
 
+  /* Applique le background et le text color sur le <body> */
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
   }
 }
