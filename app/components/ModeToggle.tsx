@@ -1,7 +1,7 @@
 "use client";
 
 // import { useTheme } from "next-themes";
-import { Moon } from "lucide-react";
+import { Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export function ModeToggle() {
@@ -23,8 +23,8 @@ export function ModeToggle() {
                      rounded-full cursor-not-allowed"
       aria-disabled="true"
     >
-      {/* Icône forcée : Moon */}
-      <Moon className="text-gray-400" />
+      {/* Icône forcée : Sun, pour signifier « Light mode » */}
+      <Sun className="text-yellow-500" />
 
       {/* Tooltip au survol */}
       <span
