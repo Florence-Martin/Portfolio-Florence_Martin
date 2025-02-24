@@ -5,6 +5,8 @@ import "./globals.css";
 import { Anek_Telugu } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "./components/theme-provider/ThemeProvider";
+import { Footer } from "./components/Footer";
+import Header from "./components/Header";
 
 const AnekTelugu = Anek_Telugu({
   subsets: ["latin"],
@@ -32,7 +34,9 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

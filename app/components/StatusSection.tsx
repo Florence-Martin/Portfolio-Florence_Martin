@@ -3,6 +3,7 @@ import { Section } from "./Section";
 import { ProjectList } from "./Project/ProjectList";
 import { WorkList } from "./Work/WorkList";
 import { ContactList } from "./Contact/ContactList";
+import { FrontendMentorList } from "./FrontendMentor/FrontendMentorList";
 
 // Composant principal qui regroupe les sections : Projets, Work, Contact
 export const StatusSection = () => {
@@ -17,6 +18,7 @@ export const StatusSection = () => {
       <div className="flex-[2] w-full flex flex-col gap-4">
         <WorkList />
         <ContactList />
+        <FrontendMentorList />
       </div>
     </Section>
   );

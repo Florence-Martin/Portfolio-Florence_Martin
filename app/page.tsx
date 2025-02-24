@@ -1,8 +1,6 @@
 "use client";
 import { useScroll, useSpring, motion } from "framer-motion";
 import BackToTopButton from "./components/BackButton";
-import { Footer } from "./components/Footer";
-import Header from "./components/Header";
 import { Hero } from "./components/Hero";
 import { SkillList } from "./components/Skill/SkillList";
 import { Spacing } from "./components/Spacing";
@@ -22,9 +20,7 @@ export default function Home() {
   });
 
   return (
-    <main>
-      <Header />
-
+    <main className="min-h-screen flex flex-col">
       {/* Barre de progression verticale */}
       <motion.div
         style={{ scaleY }}
@@ -51,7 +47,6 @@ export default function Home() {
         <AdditionalToolsCarousel />
         <BackToTopButton />
       </div>
-      <Footer />
     </main>
   );
 }
