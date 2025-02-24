@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Section } from "./Section";
 import { LinkedInIcon } from "./icons/LinkedInIcon";
 import Link from "next/link";
@@ -69,16 +68,6 @@ export const Hero = () => {
           novateurs, je cherche à apporter une contribution alliant expertise
           technique et sens du design.
         </p>
-      </div>
-      <div className="flex-[2] max-md:m-auto ml-auto">
-        <Image
-          src="/assets/images/FloM.png"
-          alt="Photo de Florence Martin"
-          className="rounded-full max-w-xs max-md:w-56"
-          width={300}
-          height={300}
-          priority
-        />
       </div>
     </Section>
   );
