@@ -8,7 +8,7 @@ export async function FetchFrontendMentorChallenges() {
       image: "/assets/images/3-column-preview-card.png",
       role: "Frontend",
       url: "https://3-column-preview-card-swart-nu.vercel.app/",
-      stack: ["HTML", "CSS"],
+      stack: ["Next.js"],
     },
     {
       id: 2,
@@ -18,17 +18,17 @@ export async function FetchFrontendMentorChallenges() {
       image: "/assets/images/time-tracking-dashboard.png",
       role: "Frontend",
       url: "https://time-tracking-dashboard-rho-nine.vercel.app/",
-      stack: ["HTML", "CSS"],
+      stack: ["Next.js"],
     },
     {
       id: 3,
-      title: "🚧 GitHub User Search App",
+      title: "GitHub User Search App",
       type: "Landing Page",
       level: "Premium-Junior",
       image: "/assets/images/github-user-search-app.png",
       role: "Frontend",
       url: "https://github-user-search-app-lovat-seven.vercel.app/",
-      stack: ["HTML", "CSS"],
+      stack: ["Next.js", "GitHub API"],
     },
   ];
 }
