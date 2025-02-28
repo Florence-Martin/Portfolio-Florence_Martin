@@ -32,7 +32,7 @@ export async function FetchFrontendMentorChallenges() {
     },
     {
       id: 4,
-      title: "Personal blog",
+      title: "🚧 Personal blog 🚧 In progress",
       type: "Blog",
       level: "Intermediate",
       image: "/assets/images/personal-blog.jpg",
