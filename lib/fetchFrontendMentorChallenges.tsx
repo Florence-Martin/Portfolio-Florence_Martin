@@ -30,5 +30,15 @@ export async function FetchFrontendMentorChallenges() {
       url: "https://github-user-search-app-lovat-seven.vercel.app/",
       stack: ["Next.js", "GitHub API"],
     },
+    {
+      id: 4,
+      title: "Personal blog",
+      type: "Blog",
+      level: "Intermediate",
+      image: "/assets/images/personal-blog.jpg",
+      role: "Frontend",
+      url: "https://frontend-mentor-challenges-personal-blog.vercel.app/",
+      stack: ["Next.js", "Tailwind CSS"],
+    },
   ];
 }
