@@ -8,7 +8,7 @@ export async function FetchFrontendMentorChallenges() {
       image: "/assets/images/3-column-preview-card.png",
       role: "Frontend",
       url: "https://3-column-preview-card-swart-nu.vercel.app/",
-      stack: ["Next.js"],
+      stack: ["Next.js", "CSS"],
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export async function FetchFrontendMentorChallenges() {
       image: "/assets/images/time-tracking-dashboard.png",
       role: "Frontend",
       url: "https://time-tracking-dashboard-rho-nine.vercel.app/",
-      stack: ["Next.js"],
+      stack: ["Next.js", "CSS"],
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ export async function FetchFrontendMentorChallenges() {
       image: "/assets/images/github-user-search-app.png",
       role: "Frontend",
       url: "https://github-user-search-app-lovat-seven.vercel.app/",
-      stack: ["Next.js", "GitHub API"],
+      stack: ["Next.js", "CSS", "GitHub API"],
     },
     {
       id: 4,
