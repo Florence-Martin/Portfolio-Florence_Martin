@@ -32,13 +32,13 @@ export async function FetchFrontendMentorChallenges() {
     },
     {
       id: 4,
-      title: "🚧 Personal blog 🚧 In progress",
+      title: "Personal blog",
       type: "Blog",
       level: "Intermediate",
       image: "/assets/images/personal-blog.jpg",
       role: "Frontend",
       url: "https://frontend-mentor-challenges-personal-blog.vercel.app/",
-      stack: ["Next.js", "Tailwind CSS"],
+      stack: ["Next.js", "Tailwind CSS", "Frame Motion"],
     },
   ];
 }
