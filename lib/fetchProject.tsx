@@ -5,6 +5,7 @@ import {
   Bitcoin,
   Heart,
   SquareLibrary,
+  SquareKanban,
 } from "lucide-react";
 
 export async function FetchProject() {
@@ -23,6 +24,7 @@ export async function FetchProject() {
         "Vercel",
       ],
       inProgress: false,
+      isDemo: false,
     },
     {
       Logo: FileUser,
@@ -38,6 +40,25 @@ export async function FetchProject() {
         "Vercel",
       ],
       inProgress: false,
+      isDemo: false,
+    },
+    {
+      Logo: SquareKanban,
+      title: "PO - UX Dataviz",
+      description:
+        "Dashboard interactif pour Product Owner (PO), avec données Firebase. Le projet est entièrement testable en ligne !",
+      urlWebsite: "https://po-ux-ui-data.vercel.app/",
+      urlGitHub: "https://github.com/Florence-Martin/PO-UX-UI-DATA",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn/UI",
+        "Firebase",
+        "Vercel",
+      ],
+      inProgress: true,
+      isDemo: true,
     },
     {
       Logo: SquareLibrary,
@@ -55,6 +76,7 @@ export async function FetchProject() {
         "Vercel",
       ],
       inProgress: true,
+      isDemo: true,
     },
     {
       Logo: Bitcoin,
@@ -73,6 +95,7 @@ export async function FetchProject() {
         "Shadcn/UI",
       ],
       inProgress: true,
+      isDemo: false,
     },
     {
       Logo: Heart,
@@ -90,6 +113,7 @@ export async function FetchProject() {
         "Vercel",
       ],
       inProgress: false,
+      isDemo: false,
     },
     {
       Logo: Code,
@@ -100,6 +124,7 @@ export async function FetchProject() {
       urlGitHub: "https://github.com/Florence-Martin/CDA_fil_rouge",
       technologies: ["Next.js", "TypeScript", "PostgreSQL", "Docker"],
       inProgress: false,
+      isDemo: false,
     },
     {
       Logo: Code,
@@ -109,6 +134,7 @@ export async function FetchProject() {
       urlGitHub: "https://github.com/Florence-Martin/simplo-cine",
       technologies: ["Next.js", "TypeScript", "Docker", "Nginx"],
       inProgress: false,
+      isDemo: false,
     },
     {
       Logo: Smartphone,
@@ -118,6 +144,7 @@ export async function FetchProject() {
       urlGitHub: "https://github.com/Florence-Martin/AlertLyon",
       technologies: ["React Native", "Expo"],
       inProgress: false,
+      isDemo: false,
     },
   ];
 }

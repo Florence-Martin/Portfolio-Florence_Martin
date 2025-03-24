@@ -28,6 +28,7 @@ interface SideProjectProps {
   urlGitHub: string;
   technologies: string[];
   inProgress?: boolean;
+  isDemo?: boolean;
 }
 
 export const SideProjectCard = ({
@@ -38,6 +39,7 @@ export const SideProjectCard = ({
   urlGitHub,
   technologies,
   inProgress,
+  isDemo,
 }: SideProjectProps) => {
   return (
     <motion.div
@@ -51,10 +53,27 @@ export const SideProjectCard = ({
             <Logo className="w-6 h-6 text-muted-foreground" />
           </div>
           <div className="flex-1">
-            <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">
-              {title}
-            </CardTitle>
-            <CardDescription className="text-muted-foreground">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
+              <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">
+                {title}
+              </CardTitle>
+              {isDemo && (
+                <motion.div
+                  initial={{ opacity: 0, y: -4 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: 0.1 }}
+                >
+                  <Badge
+                    variant="outline"
+                    className="mt-1 sm:mt-0 w-max rounded-full border-green-600 text-green-600 text-sm px-2 py-0.5 transition-all duration-200 ease-in-out"
+                  >
+                    Démo interactive
+                  </Badge>
+                </motion.div>
+              )}
+            </div>
+            <CardDescription className="text-muted-foreground mt-1">
               {description}
             </CardDescription>
           </div>
@@ -62,7 +81,7 @@ export const SideProjectCard = ({
         <CardContent className="flex flex-col md:flex-row items-start md:items-center gap-4">
           <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mt-2 w-full justify-between">
             {/* Conteneur gauche pour les liens */}
-            <div className="flex items-center gap-4">
+            <div className="flex flex-wrap items-center gap-2 max-w-full">
               {inProgress && (
                 <Badge
                   variant="destructive"
@@ -71,6 +90,7 @@ export const SideProjectCard = ({
                   🚧 En cours...
                 </Badge>
               )}
+
               {urlGitHub && (
                 <Link
                   href={urlGitHub}
