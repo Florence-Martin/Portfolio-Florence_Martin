@@ -11,15 +11,33 @@ import {
 export async function FetchProject() {
   return [
     {
-      Logo: FileUser,
-      title: "CV_Florence_Martin",
-      description: "Développeuse | UX/UI | CDA [Certification DevOps]",
-      urlWebsite: "https://cvflorence-martin.vercel.app/",
-      urlGitHub: "https://github.com/Florence-Martin/CV-Florence_Martin",
+      Logo: SquareKanban,
+      title: "PO - UX Dataviz",
+      description:
+        "Dashboard interactif pour Product Owner (PO), avec données Firebase. Le projet est entièrement testable en ligne !",
+      urlWebsite: "https://po-ux-ui-data.vercel.app/",
+      urlGitHub: "https://github.com/Florence-Martin/PO-UX-UI-DATA",
       technologies: [
         "Next.js",
         "TypeScript",
-        "i18next",
+        "Tailwind CSS",
+        "Shadcn/UI",
+        "Firebase",
+        "Vercel",
+      ],
+      inProgress: true,
+      isDemo: true,
+    },
+    {
+      Logo: FileUser,
+      title: "CV_Product Owner Tech",
+      description: "Développeuse | UX/UI | CDA [Certification DevOps]",
+      urlWebsite: "https://cv-fm-po-florencemartins-projects.vercel.app/",
+      urlGitHub: "https://github.com/Florence-Martin/CV-FM-PO",
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Framer Motion",
         "Tailwind CSS",
         "Vercel",
       ],
@@ -42,24 +60,7 @@ export async function FetchProject() {
       inProgress: false,
       isDemo: false,
     },
-    {
-      Logo: SquareKanban,
-      title: "PO - UX Dataviz",
-      description:
-        "Dashboard interactif pour Product Owner (PO), avec données Firebase. Le projet est entièrement testable en ligne !",
-      urlWebsite: "https://po-ux-ui-data.vercel.app/",
-      urlGitHub: "https://github.com/Florence-Martin/PO-UX-UI-DATA",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Shadcn/UI",
-        "Firebase",
-        "Vercel",
-      ],
-      inProgress: true,
-      isDemo: true,
-    },
+
     {
       Logo: SquareLibrary,
       title: "UI Library",
@@ -95,6 +96,22 @@ export async function FetchProject() {
         "Shadcn/UI",
       ],
       inProgress: true,
+      isDemo: false,
+    },
+    {
+      Logo: FileUser,
+      title: "CV_Développeuse-frontend",
+      description: "Développeuse | UX/UI | CDA [Certification DevOps]",
+      urlWebsite: "https://cvflorence-martin.vercel.app/",
+      urlGitHub: "https://github.com/Florence-Martin/CV-Florence_Martin",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "i18next",
+        "Tailwind CSS",
+        "Vercel",
+      ],
+      inProgress: false,
       isDemo: false,
     },
     {
