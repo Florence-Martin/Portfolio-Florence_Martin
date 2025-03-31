@@ -27,7 +27,7 @@ const Header: React.FC = () => {
         <div className="flex-1" />
         <ul className="flex items-center gap-6">
           <Link
-            href="https://cvflorence-martin.vercel.app"
+            href="https://cv-fm-po-florencemartins-projects.vercel.app/"
             target="_blank"
             className="text-lg font-bold text-primary max-md:text-sm"
             aria-label="CV"
