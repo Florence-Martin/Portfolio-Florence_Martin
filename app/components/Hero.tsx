@@ -13,7 +13,7 @@ export const Hero = () => {
           Florence Martin
         </h1>
         <h2 className="text-base sm:text-lg text-muted-foreground mt-1">
-          Product Owner Tech | UX/UI | Développeuse Front-end
+          Product Owner Tech | UX/UI | Agilité
         </h2>
         <p className="text-base leading-relaxed">
           Basée en
@@ -37,8 +37,8 @@ export const Hero = () => {
 
           <p className="flex items-center gap-2 flex-wrap">
             <strong>Product Owner à double casquette :</strong>{" "}
-            <strong>développeuse front-end</strong> et{" "}
-            <strong>UX/UI designer</strong>.
+            <strong>UX/UI designer</strong> et{" "}
+            <strong>développeuse front-end</strong>.
             <br />
             <span className="flex items-start gap-2 pt-2">
               <Puzzle className="w-5 h-5 mt-1 shrink-0" />
@@ -61,11 +61,11 @@ export const Hero = () => {
           <div>
             <strong>Mes compétences clés :</strong>
             <ul className="list-disc list-inside mt-2 space-y-1">
-              <li>⚙️ Développement front-end (React, Next.js, Tailwind)</li>
-              <li>🎨 UX/UI Design (Figma, design system, accessibilité)</li>
               <li>
                 📈 Gestion produit (roadmap, user stories, backlog, tests)
               </li>
+              <li>🎨 UX/UI Design (Figma, design system, accessibilité)</li>
+              <li>⚙️ Développement front-end (React, Next.js, Tailwind)</li>
             </ul>
           </div>
 
