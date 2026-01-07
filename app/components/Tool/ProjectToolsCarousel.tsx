@@ -8,7 +8,7 @@ export const ProjectToolsCarousel: React.FC = async () => {
   return (
     <Section className="w-full p-4 flex flex-col gap-2">
       <p className="text-xl font-medium text-muted-foreground">
-        Gestion de projets
+        Produit & Organisation
       </p>
 
       {/* Conteneur de défilement horizontal avec accrochage */}

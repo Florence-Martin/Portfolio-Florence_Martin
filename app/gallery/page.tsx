@@ -1,42 +1,9 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { FetchFrontendMentorChallenges } from "@/lib/fetchFrontendMentorChallenges";
 import FrontendMentorCard from "../components/FrontendMentor/FrontendMentorCard";
 import GoBackButton from "@/components/ui/GoBackButton";
 
-interface Challenge {
-  id: number;
-  title: string;
-  type: string;
-  level: string;
-  image: string;
-  role: string;
-  url: string;
-  stack: string[];
-}
-
-export default function Gallery() {
-  const [challenges, setChallenges] = useState<Challenge[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    async function loadChallenges() {
-      try {
-        const data = await FetchFrontendMentorChallenges();
-        setChallenges(data);
-      } catch {
-        setError("Erreur lors du chargement des challenges.");
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadChallenges();
-  }, []);
-
-  if (loading) return <p className="text-center">Chargement...</p>;
-  if (error) return <p className="text-center text-red-500">{error}</p>;
+export default async function Gallery() {
+  const challenges = await FetchFrontendMentorChallenges();
 
   return (
     <main className="min-h-screen flex flex-col">

@@ -5,12 +5,12 @@ export async function FetchDesignTools() {
   return [
     {
       title: "Figma",
-      description: <>Maquettage et Prototypage</>,
+      description: <>Wireframes, prototypage et collaboration UX.</>,
       imageLogo: <FigmaLogo size={60} />,
     },
     {
       title: "Illustrator",
-      description: <>Dessin vectoriel</>,
+      description: <>Création d&apos;icônes et assets vectoriels.</>,
       imageLogo: <IllustratorLogo size={60} />,
     },
   ];

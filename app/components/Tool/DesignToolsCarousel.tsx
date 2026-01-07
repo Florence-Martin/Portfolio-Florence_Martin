@@ -8,7 +8,7 @@ export const DesignToolsCarousel: React.FC = async () => {
 
   return (
     <Section className="w-full p-4 flex flex-col gap-2">
-      <p className="text-xl font-medium text-muted-foreground">Design</p>
+      <p className="text-xl font-medium text-muted-foreground">Design & UX</p>
 
       {/* Conteneur de défilement horizontal avec accrochage */}
       <div className="w-full overflow-x-auto snap-x snap-mandatory flex gap-4 py-4">

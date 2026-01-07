@@ -26,7 +26,7 @@ const HERO_COPY = {
   ],
   cta: {
     primary: {
-      label: "Voir mon projet phare",
+      label: "Voir mes projets phares",
       href: "#projects",
       ariaLabel: "Voir mon projet phare combinant PO, UX/UI et data",
     },

@@ -11,7 +11,8 @@ interface WorkProps {
   date: string;
   url: string;
   stack?: string[];
-  student?: boolean;
+  experienceType?: string;
+  bullets?: string[];
 }
 
 export const WorkCard = ({
@@ -20,41 +21,70 @@ export const WorkCard = ({
   role,
   date,
   url,
-  student,
+  experienceType,
   stack,
+  bullets,
 }: WorkProps) => {
   return (
-    <Card className="p-3 bg-accent/10 group hover:bg-slate-700 transition-colors grid grid-cols-3 items-center gap-4">
-      <Link
-        href={url}
-        className="col-span-2 flex items-center gap-4 p-1 rounded group-hover:bg-slate-700 transition-colors"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`Link to ${title}`}
-      >
-        <Image
-          src={image}
-          alt={`Image of ${title}`}
-          width={40}
-          height={40}
-          className="object-contain rounded-md"
-        />
-        <div>
-          <p className="text-lg font-semibold">{title}</p>
-          {student && <Badge variant="outline">Student</Badge>}
-          <p className="text-md text-muted-foreground">{role}</p>
-          <div className="flex flex-wrap gap-2 mt-2">
-            {stack?.map((tech, index) => (
-              <Badge key={index} variant="outline">
-                <span className="text-white mr-1">#</span>
-                {tech}
-              </Badge>
-            ))}
+    <Card className="p-4 bg-accent/10 group hover:bg-slate-700 transition-colors">
+      <div className="flex items-start gap-4">
+        <Link
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Link to ${title}`}
+          className="flex-shrink-0"
+        >
+          <Image
+            src={image}
+            alt={`Image of ${title}`}
+            width={48}
+            height={48}
+            className="object-contain rounded-md hover:opacity-80 transition-opacity"
+          />
+        </Link>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center justify-between gap-2 mb-1">
+            <div className="flex items-center gap-2 flex-wrap">
+              <Link
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-semibold hover:underline"
+              >
+                {title}
+              </Link>
+              {experienceType && (
+                <Badge variant="outline" className="text-xs">
+                  {experienceType}
+                </Badge>
+              )}
+            </div>
+            <p className="text-xs text-muted-foreground whitespace-nowrap">
+              {date}
+            </p>
           </div>
+          <p className="text-sm text-muted-foreground mb-3">{role}</p>
+          {bullets && bullets.length > 0 && (
+            <ul className="space-y-1.5 mb-3 text-sm">
+              {bullets.map((bullet, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <span className="text-primary mt-0.5">•</span>
+                  <span className="text-muted-foreground">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+          {stack && stack.length > 0 && (
+            <div className="flex flex-wrap gap-1.5">
+              {stack.map((tech, index) => (
+                <Badge key={index} variant="outline" className="text-xs">
+                  {tech}
+                </Badge>
+              ))}
+            </div>
+          )}
         </div>
-      </Link>
-      <div className="text-right">
-        <p className="text-xs text-muted-foreground">{date}</p>
       </div>
     </Card>
   );

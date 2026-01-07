@@ -14,8 +14,9 @@ const AnekTelugu = Anek_Telugu({
 });
 
 export const metadata: Metadata = {
-  title: "Florence Martin . Developpeuse",
-  description: "Développeuse web frontend | React | Next.js | TailwindCSS",
+  title: "Florence Martin . Product Owner & Product Builder",
+  description:
+    "Product Owner & Product Builder | React | Next.js | TailwindCSS",
 };
 
 export default function RootLayout({

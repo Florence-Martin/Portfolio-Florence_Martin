@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className="bg-card">
       <Section className="py-8">
         <p className="text-muted-foreground text-sm">
-          © 2024 - Florence Martin
+          © {new Date().getFullYear()} – Florence Martin
         </p>
       </Section>
     </footer>

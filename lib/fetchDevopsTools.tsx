@@ -5,17 +5,17 @@ export async function FetchDevopsTools() {
   return [
     {
       title: "GitHub Actions",
-      description: <>Automatisation des workflows CI/CD.</>,
+      description: <>CI/CD et automatisation des déploiements.</>,
       imageLogo: <GitHubIcon size={60} />,
     },
     {
       title: "Docker",
-      description: <>Conteneurisation d&apos;applications.</>,
+      description: <>Environnements maîtrisés pour la delivery.</>,
       imageLogo: <DockerLogo size={60} />,
     },
     {
       title: "Docker Compose",
-      description: <>Gestion de conteneurs multi-services.</>,
+      description: <>Orchestration multi-services en local.</>,
       imageLogo: <DockerLogo size={60} />,
     },
   ];
