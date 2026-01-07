@@ -1,4 +1,3 @@
-import { Code } from "@/app/components/Code";
 import { NextLogo } from "@/app/components/icons/NextLogo";
 import { ReactLogo } from "@/app/components/icons/ReactLogo";
 import { ShadcnLogo } from "@/app/components/icons/ShadcnLogo";
