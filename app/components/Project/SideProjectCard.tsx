@@ -47,7 +47,7 @@ export const SideProjectCard = ({
       <Card
         className={`group bg-card border transition-all duration-300 ${
           featured
-            ? "border-primary/50 shadow-md hover:shadow-lg"
+            ? "border-primary/70 shadow-lg hover:shadow-xl ring-1 ring-primary/20"
             : "border-border hover:border-primary/30"
         }`}
       >
@@ -61,6 +61,15 @@ export const SideProjectCard = ({
                 <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">
                   {title}
                 </CardTitle>
+                {/* Badge projet phare */}
+                {featured && (
+                  <Badge
+                    variant="outline"
+                    className="rounded-full border-primary bg-primary/10 text-primary text-xs px-2.5 py-0.5 font-semibold"
+                  >
+                    ★ Projet phare
+                  </Badge>
+                )}
                 {/* Badges statut */}
                 <div className="flex flex-wrap gap-2">
                   {isDemo && (
