@@ -7,6 +7,20 @@ import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { LucideIcon } from "lucide-react";
+
+interface Project {
+  Logo: LucideIcon;
+  title: string;
+  role?: string;
+  description: string;
+  urlWebsite: string;
+  urlGitHub: string;
+  technologies: string[];
+  inProgress?: boolean;
+  isDemo?: boolean;
+  featured?: boolean;
+}
 
 export const ProjectList: React.FC = async () => {
   const projects = await FetchProject();
@@ -49,7 +63,7 @@ export const ProjectList: React.FC = async () => {
 };
 
 // Composant client pour gérer l'état du toggle
-function OtherProjectsSection({ projects }: { projects: any[] }) {
+function OtherProjectsSection({ projects }: { projects: Project[] }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
