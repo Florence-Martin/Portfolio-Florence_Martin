@@ -36,28 +36,28 @@ const HERO_COPY = {
       ariaLabel: "Me contacter sur LinkedIn",
     },
   },
-  availability: "CDI recherché • Freelance possible (Malt / Collective)",
+  availability: "CDI / CDD recherché • Freelance possible (Malt / Collective)",
 };
 
 export const Hero = () => {
   return (
     <Section className="max-w-4xl px-4 m-auto flex max-md:flex-col items-start gap-4">
-      <div className="flex-[3] w-full flex flex-col gap-6">
+      <div className="flex-[3] w-full flex flex-col gap-8">
         {/* Header avec nom et titre */}
-        <div className="space-y-2">
-          <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-foreground via-primary to-blue-400 bg-clip-text text-transparent">
+        <div className="space-y-3">
+          <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-foreground via-primary to-blue-400 bg-clip-text text-transparent">
             {HERO_COPY.name}
           </h1>
-          <h2 className="text-xl sm:text-2xl text-foreground font-semibold">
+          <h2 className="text-2xl sm:text-3xl text-foreground font-bold leading-tight">
             {HERO_COPY.title}
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground font-medium">
+          <p className="text-sm sm:text-base text-muted-foreground/80 font-medium">
             {HERO_COPY.subtitle}
           </p>
-          <p className="text-sm text-muted-foreground/70 italic">
+          <p className="text-xs text-muted-foreground/60 italic">
             {HERO_COPY.signature}
           </p>
-          <p className="text-base leading-relaxed flex items-center gap-2 pt-2">
+          <p className="text-sm leading-relaxed flex items-center gap-2 pt-2">
             Basée en
             <Code className="inline-flex items-center gap-1.5">
               <FranceFlagIcon size={16} className="inline" />
@@ -67,12 +67,12 @@ export const Hero = () => {
         </div>
 
         {/* Tagline courte */}
-        <p className="text-lg leading-relaxed text-foreground/90">
+        <p className="text-base leading-relaxed text-foreground/80">
           {HERO_COPY.tagline}
         </p>
 
         {/* Description condensée */}
-        <p className="text-base leading-relaxed text-muted-foreground">
+        <p className="text-sm leading-relaxed text-muted-foreground/70">
           {HERO_COPY.description}
         </p>
 
@@ -82,7 +82,7 @@ export const Hero = () => {
             <Badge
               key={skill}
               variant="secondary"
-              className="px-2.5 py-0.5 text-xs font-normal rounded-full bg-accent/30 hover:bg-accent/50 transition-colors"
+              className="px-2 py-0.5 text-xs font-normal rounded-full bg-accent/20 hover:bg-accent/40 transition-colors opacity-80"
             >
               {skill}
             </Badge>
@@ -90,7 +90,7 @@ export const Hero = () => {
         </div>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-3 mt-2">
+        <div className="flex flex-col sm:flex-row gap-3">
           <Button
             asChild
             size="lg"
@@ -120,7 +120,7 @@ export const Hero = () => {
         </div>
 
         {/* Ligne discrète disponibilité */}
-        <p className="text-sm text-muted-foreground/70 italic border-l-2 border-primary/30 pl-3">
+        <p className="text-xs text-muted-foreground/60 italic border-l-2 border-primary/30 pl-3">
           {HERO_COPY.availability}
         </p>
       </div>
