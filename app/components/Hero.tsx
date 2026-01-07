@@ -10,10 +10,12 @@ import { Badge } from "@/components/ui/badge";
 // Configuration centralisée pour faciliter les futures variantes (PO Tech / Dev Front / Freelance)
 const HERO_COPY = {
   name: "Florence Martin",
-  title: "Product Owner Tech | UX/UI | Agilité",
+  title: "Product Owner & Product Builder",
+  subtitle: "Discovery • UX • Règles fonctionnelles • Prototypage",
+  signature: "Créatrice d'outils Produit",
   location: "France",
   tagline:
-    "Passionnée par la création de produits digitaux utiles, utilisables et techniquement solides.",
+    "Je conçois des produits digitaux utiles, utilisables et techniquement solides.",
   description:
     "PO à double casquette : je combine vision produit, design UX/UI et développement front-end pour livrer des solutions centrées utilisateur en mode agile.",
   keySkills: [
@@ -43,13 +45,19 @@ export const Hero = () => {
       <div className="flex-[3] w-full flex flex-col gap-6">
         {/* Header avec nom et titre */}
         <div className="space-y-2">
-          <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-foreground via-primary to-blue-400 bg-clip-text text-transparent">
+          <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-foreground via-primary to-blue-400 bg-clip-text text-transparent">
             {HERO_COPY.name}
           </h1>
-          <h2 className="text-lg sm:text-xl text-muted-foreground font-medium">
+          <h2 className="text-xl sm:text-2xl text-foreground font-semibold">
             {HERO_COPY.title}
           </h2>
-          <p className="text-base leading-relaxed flex items-center gap-2">
+          <p className="text-base sm:text-lg text-muted-foreground font-medium">
+            {HERO_COPY.subtitle}
+          </p>
+          <p className="text-sm text-muted-foreground/70 italic">
+            {HERO_COPY.signature}
+          </p>
+          <p className="text-base leading-relaxed flex items-center gap-2 pt-2">
             Basée en
             <Code className="inline-flex items-center gap-1.5">
               <FranceFlagIcon size={16} className="inline" />
