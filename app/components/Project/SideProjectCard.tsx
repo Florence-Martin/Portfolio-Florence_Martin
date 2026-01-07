@@ -113,11 +113,7 @@ export const SideProjectCard = ({
               <Button
                 asChild
                 size="sm"
-                className={
-                  featured || isDemo
-                    ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm"
-                    : "bg-secondary hover:bg-secondary/80"
-                }
+                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm"
               >
                 <Link
                   href={urlWebsite}
