@@ -27,7 +27,10 @@ const Header: React.FC = () => {
           <Link
             href="https://cv-fm-po-florencemartins-projects.vercel.app/"
             target="_blank"
-            className={cn(buttonVariants({ variant: "outline", size: "sm" }), "text-xs font-normal text-muted-foreground hover:text-foreground max-md:hidden")}
+            className={cn(
+              buttonVariants({ variant: "outline", size: "sm" }),
+              "text-xs font-normal text-muted-foreground hover:text-foreground max-md:hidden"
+            )}
             aria-label="CV"
           >
             CV

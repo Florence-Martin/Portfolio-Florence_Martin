@@ -12,7 +12,8 @@ export async function FetchProject() {
   return [
     {
       Logo: SquareKanban,
-      title: "PO - UX Dataviz",
+      title: "PO-UX-UI-Data Dashboard",
+      role: "Product Owner · UX/UI · Front-end",
       description:
         "Dashboard interactif pour Product Owner (PO), avec données Firebase. Le projet est entièrement testable en ligne !",
       urlWebsite: "https://po-ux-ui-data.vercel.app/",
@@ -27,6 +28,7 @@ export async function FetchProject() {
       ],
       inProgress: true,
       isDemo: true,
+      featured: true,
     },
     {
       Logo: FileUser,
@@ -64,6 +66,7 @@ export async function FetchProject() {
     {
       Logo: SquareLibrary,
       title: "UI Library",
+      role: "Design System · Architecture · Front-end",
       description: "Bibliothèque de composants UI",
       urlWebsite: "https://ui-library-navy.vercel.app/",
       urlGitHub: "https://github.com/Florence-Martin/UI-Library",
@@ -78,6 +81,7 @@ export async function FetchProject() {
       ],
       inProgress: true,
       isDemo: true,
+      featured: true,
     },
     {
       Logo: Bitcoin,
@@ -117,6 +121,7 @@ export async function FetchProject() {
     {
       Logo: Heart,
       title: "Reflexo Flow",
+      role: "Freelance · Discovery · UX/UI · Delivery",
       description:
         "Site vitrine - Cabinet de réflexologie - Déployé avec nom de domaine.",
       urlWebsite: "https://www.reflexo-flow.fr/",
@@ -131,6 +136,7 @@ export async function FetchProject() {
       ],
       inProgress: false,
       isDemo: false,
+      featured: true,
     },
     {
       Logo: Code,
