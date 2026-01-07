@@ -11,28 +11,29 @@ import Image from "next/image";
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 py-4 bg-background shadow-md z-50">
-      <Section className="flex items-center">
-        <div className="flex-[2] max-md:m-auto ml-auto">
+    <header className="sticky top-0 py-2 bg-background shadow-sm z-50">
+      <Section className="flex items-center justify-between">
+        <div className="flex items-center">
           <Image
             src="/assets/images/FloM.png"
             alt="Photo de Florence Martin"
-            className="rounded-full w-24 max-md:w-16"
-            width={100}
-            height={100}
+            className="rounded-full w-16 max-md:w-12"
+            width={64}
+            height={64}
             priority
           />
         </div>
-
-        <div className="flex-1" />
-        <ul className="flex items-center gap-6">
+        <ul className="flex items-center gap-3">
           <Link
             href="https://cv-fm-po-florencemartins-projects.vercel.app/"
             target="_blank"
-            className="text-lg font-bold text-primary max-md:text-sm"
+            className={cn(
+              buttonVariants({ variant: "outline", size: "sm" }),
+              "text-xs font-normal text-muted-foreground hover:text-foreground max-md:hidden"
+            )}
             aria-label="CV"
           >
-            Florence_Martin-CV
+            CV
           </Link>
           <Link
             href="https://github.com/Florence-Martin"
