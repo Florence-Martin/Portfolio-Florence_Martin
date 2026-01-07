@@ -6,29 +6,27 @@ export async function fetchAdditionalTools() {
   return [
     {
       title: "Notion",
-      description: <>Prise de notes et gestion de projets.</>,
+      description: <>Organisation personnelle et documentation.</>,
       imageLogo: <NotionLogo size={60} />,
     },
     {
       title: "WebStorm",
-      description: <>Environnement de développement intégré pour JavaScript.</>,
+      description: <>IDE JavaScript pour productivité et débogage.</>,
       imageLogo: <WebstormLogo size={60} />,
     },
     {
       title: "StarUML",
-      description: (
-        <>Outil de modélisation UML pour le développement logiciel.</>
-      ),
+      description: <>Modélisation UML pour architecture logicielle.</>,
       imageLogo: <ModelisationLogo size={60} />,
     },
     {
       title: "Looping",
-      description: <>Outil de modélisation pour la méthode Merise.</>,
+      description: <>Modélisation Merise pour bases de données.</>,
       imageLogo: <ModelisationLogo size={60} />,
     },
     {
       title: "JMerise",
-      description: <>Outil de modélisation pour la méthode Merise.</>,
+      description: <>Conception de schémas relationnels (Merise).</>,
       imageLogo: <ModelisationLogo size={60} />,
     },
   ];

@@ -7,7 +7,9 @@ export const DevopsToolsCarousel: React.FC = async () => {
   const ToolsDevops = await FetchDevopsTools();
   return (
     <Section className="w-full p-4 flex flex-col gap-2">
-      <p className="text-xl font-medium text-muted-foreground">Outils DevOps</p>
+      <p className="text-xl font-medium text-muted-foreground">
+        DevOps & Delivery
+      </p>
 
       {/* Conteneur de défilement horizontal avec accrochage */}
       <div className="w-full overflow-x-auto snap-x snap-mandatory flex gap-4 py-4">

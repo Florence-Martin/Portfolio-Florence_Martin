@@ -10,8 +10,8 @@ export async function FetchSkill() {
       title: "React",
       description: (
         <>
-          Mon framework principal est <Code>React</Code> comme framework
-          frontend.
+          Structuration d&apos;interfaces complexes et réutilisables pour des
+          produits à fort trafic.
         </>
       ),
       imageLogo: (
@@ -26,8 +26,8 @@ export async function FetchSkill() {
       title: "Next.js",
       description: (
         <>
-          J&apos;utilise également <Code>Next.js</Code> comme framework backend
-          et frontend.
+          Applications orientées produit avec SEO, performance et delivery
+          rapide en production.
         </>
       ),
       imageLogo: <NextLogo size={42} />,
@@ -36,8 +36,8 @@ export async function FetchSkill() {
       title: "Shadcn/UI",
       description: (
         <>
-          J&apos;utilise <Code>Shadcn/UI</Code> pour des composants UI élégants
-          et réutilisables.
+          Composants accessibles et maintenables pour accélérer la création de
+          design systems.
         </>
       ),
       imageLogo: <ShadcnLogo size={42} />,
@@ -46,8 +46,8 @@ export async function FetchSkill() {
       title: "TailwindCSS",
       description: (
         <>
-          Je peux créer de <u>belles</u> applications <i>rapidement</i> avec
-          <Code>TailwindCSS</Code>.
+          Itération rapide sur les UI et cohérence visuelle à l&apos;échelle du
+          produit.
         </>
       ),
       imageLogo: <TailwindLogo size={42} />,

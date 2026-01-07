@@ -1,3 +1,4 @@
+import { FirebaseLogo } from "@/app/components/icons/FirebaseLogo";
 import { MongoDbLogo } from "@/app/components/icons/MongoDbLogo";
 import { MySQLLogo } from "@/app/components/icons/MySQLLogo";
 import { PostgreSQLLogo } from "@/app/components/icons/PostgreSQLLogo";
@@ -20,6 +21,13 @@ export async function fetchBddTools() {
         <>Base de données NoSQL orientée documents, sans schéma prédéfini.</>
       ),
       imageLogo: <MongoDbLogo size={60} />,
+    },
+    {
+      title: "Firebase",
+      description: (
+        <>Plateforme temps réel pour prototypage rapide et persistance cloud.</>
+      ),
+      imageLogo: <FirebaseLogo size={60} className="text-primary" />,
     },
   ];
 }

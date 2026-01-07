@@ -7,22 +7,22 @@ export async function FetchProject() {
   return [
     {
       title: "Jira",
-      description: <>Gestion de projets et de suivi des tâches.</>,
+      description: <>Gestion du backlog, priorisation et suivi produit.</>,
       imageLogo: <JiraLogo size={60} />,
     },
     {
       title: "Confluence",
-      description: <>Documentation et collaboration d&apos;équipe.</>,
+      description: <>Documentation produit et règles fonctionnelles.</>,
       imageLogo: <ConfluenceLogo size={60} />,
     },
     {
       title: "Trello",
-      description: <>Gestion de projets basé sur des tableaux.</>,
+      description: <>Organisation visuelle et gestion de flux.</>,
       imageLogo: <TrelloLogo size={60} />,
     },
     {
       title: "Scrum",
-      description: <>Méthodologie Agile.</>,
+      description: <>Pilotage agile et livraisons itératives.</>,
       imageLogo: <ScrumLogo size={60} />,
     },
   ];
